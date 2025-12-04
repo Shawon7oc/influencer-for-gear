@@ -20,14 +20,16 @@ body {
 .simple-gray {
   color: #787885;
 }
+
 /* header width hight */
 #all-heder-bn {
-    width: 1180px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 /* navbar related styles */
 .navbar {
   margin-top: 87px;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-links {
@@ -66,8 +68,46 @@ body {
   background: #e02c6d;
   border: none;
 }
-.banner-img {
+.banner-img > img {
   width: 100%;
   background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
+}
+/* social media related styles */
+#media {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.media-img {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-top: 70px;
+  padding: 40px 0 40px 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+      135deg,
+      rgba(192, 204, 218, 0.1),
+      rgba(192, 204, 218, 0.6) 50%,
+      rgba(192, 204, 218, 0.1)
+    )
+    1;
+}
+
+/* responsive work */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 100px;
+    text-align: center;
+  }
+  .media-img{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    row-gap: 60px;
+  }
 }
