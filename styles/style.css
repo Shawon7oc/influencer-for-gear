@@ -136,12 +136,41 @@ body {
   margin-top: 6px;
   margin-bottom: 20px;
 }
+/* featured related styles */
+#featured {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.featured-moue-all {
+  margin-top: 175px;
+  align-items: center;
+  gap: 96px;
+}
+.featured-btn {
+  font-weight: 700;
+  border: none;
+  color: #ffffff;
+  padding: 10px 24px 10px 24px;
+  background: #e02c6d;
+}
+.featured-description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #6c6c6c;
+  font-weight: 700;
+}
+.featured-title {
+  color: #0a0826;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 /* responsive work */
 @media screen and (max-width: 576px) {
   .navbar {
     flex-direction: column;
   }
-  .banner {
+  .banner,
+  .featured-moue-all {
     flex-direction: column-reverse;
     gap: 100px;
     text-align: center;
