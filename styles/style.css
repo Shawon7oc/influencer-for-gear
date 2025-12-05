@@ -95,6 +95,23 @@ body {
     1;
 }
 /* products related styles */
+#products {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.products-main {
+  margin-top: 100px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+.all-products {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  justify-items: center;
+}
 .pro-box {
   width: 329px;
   height: 476px;
@@ -105,7 +122,7 @@ body {
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 .pro-title {
@@ -129,7 +146,8 @@ body {
     gap: 100px;
     text-align: center;
   }
-  .media-img {
+  .media-img,
+  .all-products {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     row-gap: 60px;
